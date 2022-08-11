@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+margin: 0;
+padding:0;
+font-family: "Poppins" , sans-serif;
+box-sizing: border-box;
+}
+
+body{
+height: 100vh;
+width: 100%;
+display: flex;
+}
+
+.container{
+  background-color: blue;
+  background-image: linear-gradient(0deg, blue 0%, aqua 100%);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list{
+min-width: 60%;
+max-width: 80%;
+background-color: azure;
+display: flex;
+flex-direction: column;
+height: 50%;
+box-shadow:inse 0 0 .5rem grey;
+border-radius: 40px;
+}
+
+
+.list{
+  
+  flex-grow: 1;
+  padding: 2rem;
+  overflow-y: scroll;
+}
+
+.input{
+
+padding: 2rem;
+display: flex;
+flex-direction: column;
+}
+
+.input h1 {
+text-align: center;
+padding-bottom: 1rem;
+color: gray;
+letter-spacing: .2rem;
+}
+
+.input div {
+display: flex;
+}
+
+.todo_input__input{
+border:thin solid blueviolet;
+flex-grow: 1;
+padding: .5rem;
+outline:none;
+}
+
+.todo_input__input:hover{
+border: thin solid salmon;
+}
+
+
+.todo_input__input:active{
+  border: thin solid darkgreen;
+}
+
+.todo_input__input:focus{
+border: thin solid green;
+}
+
+.todo_input_btn{
+  outline: none;
+  border: thin solid aqua;
+  padding: .5rem;
+  cursor: pointer;
+  background-color: aquamarine;
+  color: white;
+}
+
+.footer{
+  padding: 2rem;
+}
+
+.footer__title{
+text-align: center;
+color: rgb(15, 119, 62);
+}
+
+::-webkit-scrollbar{
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+  box-shadow : inset 0 0 5px whitesmoke;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: bisque;
+  border-radius: 10px;
+}
+
+.list ul {
+  list-style-type:none;
+  margin:0;
+  padding: 0;
+}
+
+.list ul li {
+display: flex;
+justify-content: space-between;
+align-items: center;
+cursor: pointer;
+}
+
+.list ul li i{
+  cursor: pointer;
+  columns: red;
+  padding: 1rem;
+}
+
+.list ul li i:hover{
+  background-color: white;
+}
